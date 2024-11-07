@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Remover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Program Penghapus Latar Belakang</h1>
+        <input type="file" id="upload" accept="image/*">
+        <button id="removeBgBtn">Klik untuk Proses!</button>
+        <br><br>
+        <div id="result">
+            <div>
+                <h3>Gambar sebelumh diproses</h3>
+                <img id="originalImage" src="" alt="Original Image" />
+            </div>
+            <div>
+                <h3>Gambar setelah diproses</h3>
+                <img id="outputImage" src="" alt="Processed Image" style="display: none;" />
+                <br>
+                <!-- Tombol untuk mendownload gambar yang sudah diproses -->
+                <button id="downloadBtn" style="display:none;">Unduh Gambar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca:wght@100..900&display=swap');
+
+
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#upload {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#upload:hover {
+    background-color: #f1f1f1;
+}
+
+#removeBgBtn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#removeBgBtn:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+#originalImage, #outputImage {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+#result img {
+    transition: transform 0.3s ease;
+}
+
+#result img:hover {
+    transform: scale(1.05);
+}
+
+/* Tambahan untuk tombol download */
+#downloadBtn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#downloadBtn:hover {
+    background-color: #218838;
+}
+/* CSS untuk tampilan gambar dan tombol download */
+#originalImage, #outputImage {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+#downloadBtn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#downloadBtn:hover {
+    background-color: #218838;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    #result {
+        flex-direction: column;
+        align-items: center;
+    }
+}
